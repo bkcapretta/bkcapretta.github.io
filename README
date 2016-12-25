@@ -1,7 +1,12 @@
 HTML README
 
-I am learning HTML as I make my website, so this README is a place to make note of HTML code that I don't want to forget.
+I am learning HTML and remote Github commands as I make my website, so this README is a place to make note of anything new. 
 
+Github
+Helping information on how to push and commit
+http://stackoverflow.com/questions/17291995/push-existing-project-into-github
+
+HTML
 To embed images:
 <img src=”website”/>
 
