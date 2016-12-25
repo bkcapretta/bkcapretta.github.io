@@ -1,0 +1,9 @@
+HTML README
+
+I am learning HTML as I make my website, so this README is a place to make note of HTML code that I don't want to forget.
+
+To embed images:
+<img src=”website”/>
+
+To embed links:
+<a href=”website”>Whatever I wanna say about it!</a>
