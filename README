@@ -44,6 +44,9 @@ To embed videos:
 - source src: Sets the URL of the video to play
 - type: Specifies different video formats
 
+To embed PDFs:
+<embed src="filename.pdf" width="800px" height="2100px"/>
+
 To add (unordered) lists:
 <ul>
   <li>A list item</li>
