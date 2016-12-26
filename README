@@ -2,7 +2,8 @@
 
 HTML README
 
-I am learning HTML and remote Github commands as I make my website, so this README is a place to make note of anything new.
+I am learning HTML and remote Github commands as I make my website, so this README 
+is a place to make note of anything and everything new.
 
 Github
 Helping information on how to push and commit
@@ -11,9 +12,21 @@ http://stackoverflow.com/questions/17291995/push-existing-project-into-github
 Link from Max:
 http://rogerdudler.github.io/git-guide/
 
+--------------------------------------------------------------------------------
+
 HTML
 To embed images:
-<img src=”website”/>
+<img src="website"/>
 
 To embed links:
-<a href=”website”>Whatever I wanna say about it!</a>
+<a href="website">Whatever I wanna say about it!</a>
+
+To embed videos:
+<video width="320" height="240" controls>
+  <source src="video-url.mp4" type="video/mp4">
+</video>
+
+width and height: Set the size of the screen that displays the video
+controls: Adds play, pause and volume control
+source src: Sets the URL of the video to play
+type: Specifies different video formats
