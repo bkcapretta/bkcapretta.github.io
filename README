@@ -79,6 +79,9 @@ find your site through a search engine, like Google
 <meta charset="utf-8"/>: Tells the web browser which character set to use.
 In this case, the character set is "utf-8"
 
+Helpful in creating a "bookmark" so a link will take you exactly a place in a page
+http://www.w3schools.com/html/html_links.asp
+
 --------------------------------------------------------------------------
 
 Intro to CSS
