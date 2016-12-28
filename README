@@ -82,6 +82,8 @@ In this case, the character set is "utf-8"
 Helpful in creating a "bookmark" so a link will take you exactly a place in a page
 http://www.w3schools.com/html/html_links.asp
 
+To insert space between blocks of words: &nbsp
+
 --------------------------------------------------------------------------
 
 Intro to CSS
