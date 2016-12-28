@@ -109,3 +109,6 @@ h1 {
 
 Colors can be represented as a Hexadecimal color (#RRGGBB) or RGB (Red, Green, Blue)
 colors
+
+If you want to have two different fonts on the same line (helpful link):
+http://www.dynamicdrive.com/forums/showthread.php?47401-2-different-fonts-on-same-line
