@@ -1,3 +1,274 @@
+MacBook-Air-7:~ biancacapretta$ man git
+
+
+
+MacBook-Air-7:~ biancacapretta$ 
+MacBook-Air-7:~ biancacapretta$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MacBook-Air-7:~ biancacapretta$ git config --global bkcapretta "Bianca"
+error: key does not contain a section: bkcapretta
+MacBook-Air-7:~ biancacapretta$ git config --global user.name "Bianca Capretta"
+MacBook-Air-7:~ biancacapretta$ git config --global user.email "bianca.capretta@gmail.com"
+MacBook-Air-7:~ biancacapretta$ brew install git
+-bash: brew: command not found
+MacBook-Air-7:~ biancacapretta$ ls -al ~/.ssh
+total 32
+drwx------   5 biancacapretta  staff   170 Oct 16 20:22 .
+drwxr-xr-x+ 40 biancacapretta  staff  1360 Feb  3 13:11 ..
+-rw-------   1 biancacapretta  staff  3326 Oct 16 20:22 id_rsa
+-rw-r--r--   1 biancacapretta  staff   751 Oct 16 20:22 id_rsa.pub
+-rw-r--r--   1 biancacapretta  staff  6601 Oct 16 20:13 known_hosts
+MacBook-Air-7:~ biancacapretta$ ssh-keygen -t rsa -b 4096 -C "bianca.capretta@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/biancacapretta/.ssh/id_rsa): 
+/Users/biancacapretta/.ssh/id_rsa already exists.
+Overwrite (y/n)? n
+MacBook-Air-7:~ biancacapretta$ ls
+Applications		Downloads		Music
+Desktop			Dropbox			Pictures
+Desktop (original)	Library			Public
+Documents		Movies			Sites
+MacBook-Air-7:~ biancacapretta$ cd Documents
+MacBook-Air-7:Documents biancacapretta$ ls
+College				MuseScore2
+Extra				Virtual Machines.localized
+Microsoft User Data
+MacBook-Air-7:Documents biancacapretta$ clear
+
+MacBook-Air-7:Documents biancacapretta$ ls
+College				MuseScore2
+Extra				Virtual Machines.localized
+Microsoft User Data
+MacBook-Air-7:Documents biancacapretta$ cd College
+MacBook-Air-7:College biancacapretta$ ls
+2015 Fall		2017 Spring		Shir Appeal
+2016 Fall		Random			bkcapretta.github.io
+2016 Spring		Resume
+MacBook-Air-7:College biancacapretta$ cd 2017 Spring
+-bash: cd: 2017: No such file or directory
+MacBook-Air-7:College biancacapretta$ cd 2017\ Spring/
+MacBook-Air-7:2017 Spring biancacapretta$ ls
+Developmental Psych	Psych of Music		comp40
+Intro to CBS		comp20
+MacBook-Air-7:2017 Spring biancacapretta$ cd comp20
+MacBook-Air-7:comp20 biancacapretta$ mkdir hello-world
+MacBook-Air-7:comp20 biancacapretta$ cd hello-world
+MacBook-Air-7:hello-world biancacapretta$ echo "# hello-world" >> README.md
+MacBook-Air-7:hello-world biancacapretta$ git init
+Initialized empty Git repository in /Users/biancacapretta/Documents/College/2017 Spring/comp20/hello-world/.git/
+MacBook-Air-7:hello-world biancacapretta$ git add README.md
+MacBook-Air-7:hello-world biancacapretta$ git commit -m "first commit"
+[master (root-commit) 772c1bf] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+MacBook-Air-7:hello-world biancacapretta$ git remote add origin git@github.com:bkcapretta/hello-world.git
+MacBook-Air-7:hello-world biancacapretta$ git push -u origina master
+fatal: 'origina' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+MacBook-Air-7:hello-world biancacapretta$ git push -u origin master
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 228 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To git@github.com:bkcapretta/hello-world.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+MacBook-Air-7:hello-world biancacapretta$ ls
+README.md
+MacBook-Air-7:hello-world biancacapretta$ vim README.md
+MacBook-Air-7:hello-world biancacapretta$ git add silly_image.jpg
+MacBook-Air-7:hello-world biancacapretta$ git commit -m "added image"
+[master ada5452] added image
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 silly_image.jpg
+MacBook-Air-7:hello-world biancacapretta$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 61.62 KiB | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To git@github.com:bkcapretta/hello-world.git
+   772c1bf..ada5452  master -> master
+Branch master set up to track remote branch master from origin.
+MacBook-Air-7:hello-world biancacapretta$ ls
+README.md	silly_image.jpg
+MacBook-Air-7:hello-world biancacapretta$ cd ..
+MacBook-Air-7:comp20 biancacapretta$ cd ..
+MacBook-Air-7:2017 Spring biancacapretta$ ls
+Developmental Psych	Psych of Music		comp40
+Intro to CBS		comp20
+MacBook-Air-7:2017 Spring biancacapretta$ cd ..
+MacBook-Air-7:College biancacapretta$ cd ..
+MacBook-Air-7:Documents biancacapretta$ ls
+College				MuseScore2
+Extra				Virtual Machines.localized
+Microsoft User Data
+MacBook-Air-7:Documents biancacapretta$ cd College
+MacBook-Air-7:College biancacapretta$ ls
+2015 Fall		2017 Spring		Shir Appeal
+2016 Fall		Random			bkcapretta.github.io
+2016 Spring		Resume
+MacBook-Air-7:College biancacapretta$ cd bkcapretta.github.io/
+MacBook-Air-7:bkcapretta.github.io biancacapretta$ ls
+README		cs_projects	index.html	music.html	projects.html
+about.html	images		main.css	other.html
+MacBook-Air-7:bkcapretta.github.io biancacapretta$ vim music.html
+MacBook-Air-7:bkcapretta.github.io biancacapretta$ git add music.html
+MacBook-Air-7:bkcapretta.github.io biancacapretta$ git commit -m "Updated radio time"
+U	index.html
+error: commit is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+MacBook-Air-7:bkcapretta.github.io biancacapretta$ git push origin master
+To git@github.com:bkcapretta/bkcapretta.github.io.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'git@github.com:bkcapretta/bkcapretta.github.io.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+MacBook-Air-7:bkcapretta.github.io biancacapretta$ git remote add origin git@github.com:bkcapretta/bkcapretta.github.io
+fatal: remote origin already exists.
+MacBook-Air-7:bkcapretta.github.io biancacapretta$ git push -u origina master
+fatal: 'origina' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+MacBook-Air-7:bkcapretta.github.io biancacapretta$ git push -u origin master
+To git@github.com:bkcapretta/bkcapretta.github.io.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'git@github.com:bkcapretta/bkcapretta.github.io.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+MacBook-Air-7:bkcapretta.github.io biancacapretta$ git pull
+A	README
+U	index.html
+A	music.html
+Pull is not possible because you have unmerged files.
+Please, fix them up in the work tree, and then use 'git add/rm <file>'
+as appropriate to mark resolution and make a commit.
+MacBook-Air-7:bkcapretta.github.io biancacapretta$ git pull origin
+A	README
+U	index.html
+A	music.html
+Pull is not possible because you have unmerged files.
+Please, fix them up in the work tree, and then use 'git add/rm <file>'
+as appropriate to mark resolution and make a commit.
+MacBook-Air-7:bkcapretta.github.io biancacapretta$ git pull music.html
+A	README
+U	index.html
+A	music.html
+Pull is not possible because you have unmerged files.
+Please, fix them up in the work tree, and then use 'git add/rm <file>'
+as appropriate to mark resolution and make a commit.
+MacBook-Air-7:bkcapretta.github.io biancacapretta$ git mergetool
+
+This message is displayed because 'merge.tool' is not configured.
+See 'git mergetool --tool-help' or 'git help config' for more details.
+'git mergetool' will now attempt to use one of the following tools:
+opendiff kdiff3 tkdiff xxdiff meld tortoisemerge gvimdiff diffuse diffmerge ecmerge p4merge araxis bc codecompare emerge vimdiff
+Merging:
+index.html
+
+Normal merge conflict for 'index.html':
+  {local}: modified file
+  {remote}: modified file
+Hit return to start merge resolution tool (opendiff): 
+xcode-select: error: tool 'opendiff' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance
+index.html seems unchanged.
+Was the merge successful? [y/n] 
+index.html seems unchanged.
+Was the merge successful? [y/n] y
+MacBook-Air-7:bkcapretta.github.io biancacapretta$ git gui
+git: 'gui' is not a git command. See 'git --help'.
+
+Did you mean one of these?
+	gc
+	grep
+	init
+	pull
+	push
+MacBook-Air-7:bkcapretta.github.io biancacapretta$ git pull
+You have not concluded your merge (MERGE_HEAD exists).
+Please, commit your changes before you can merge.
+MacBook-Air-7:bkcapretta.github.io biancacapretta$ git commit -m "update music page"
+[master 1b94b7a] update music page
+MacBook-Air-7:bkcapretta.github.io biancacapretta$ git pull
+remote: Counting objects: 132, done.
+remote: Total 132 (delta 0), reused 0 (delta 0), pack-reused 132
+Receiving objects: 100% (132/132), 1.64 MiB | 1.49 MiB/s, done.
+Resolving deltas: 100% (59/59), done.
+From github.com:bkcapretta/bkcapretta.github.io
+   c5c32f2..2aafb03  master     -> origin/master
+error: Your local changes to the following files would be overwritten by merge:
+	README
+Please, commit your changes or stash them before you can merge.
+error: The following untracked working tree files would be overwritten by merge:
+	about.html
+	cs_projects/intro_proj1.pdf
+	cs_projects/intro_proj2.pdf
+	cs_projects/proj2.pdf
+	cs_projects/project_planning.pdf
+	images/bianca.jpg
+	images/film.jpg
+	images/grovepi.jpg
+	images/inventory.png
+	images/shirappeal.jpg
+	images/sunset.jpg
+	images/warm1body.jpg
+	main.css
+	other.html
+	projects.html
+Please move or remove them before you can merge.
+Aborting
+MacBook-Air-7:bkcapretta.github.io biancacapretta$ ls
+README		cs_projects	index.html	main.css	other.html
+about.html	images		index.html.orig	music.html	projects.html
+MacBook-Air-7:bkcapretta.github.io biancacapretta$ git remote add origin git@github.com:bkcapretta/bkcapretta.github.io
+fatal: remote origin already exists.
+MacBook-Air-7:bkcapretta.github.io biancacapretta$ git push -u origin master
+To git@github.com:bkcapretta/bkcapretta.github.io.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'git@github.com:bkcapretta/bkcapretta.github.io.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+MacBook-Air-7:bkcapretta.github.io biancacapretta$ git push --help
+MacBook-Air-7:bkcapretta.github.io biancacapretta$ 
+MacBook-Air-7:bkcapretta.github.io biancacapretta$ ls
+README		cs_projects	index.html	main.css	other.html
+about.html	images		index.html.orig	music.html	projects.html
+MacBook-Air-7:bkcapretta.github.io biancacapretta$ vim music.html
+
 <!DOCTYPE html>
 <html>
         <head>
@@ -50,20 +321,14 @@
                         <ul>
                                 <li>Arabesque No. 1 by Debussy</li>
                                 <li>Beethoven's Piano Sonata No.12 in A-flat major</li>
-                                <li>Milonga del Angel by Astor Piazzolla</li>
-                                <li>Six Morceaux Op. 11 - Waltz by Rachmaninoff</li>
-                                <li>Arabesque by Schumann(and really anything by Schumann)</li>
-                                <li>Rondo alla Turca by Mozart</li>
+                                <li>Milonga del Angel by Astor Piazzolla</li>        
                         </ul></p>
-
-                <p>Here is my favorite <a href="https://www.youtube.com/watch?v=fJ9rUzIMcZQ">song</a>.
-                I love the different sections and how the song goes on a journey.</p>
 
                 <hr><h2 id="radio">Radio</h2>
 
-                <p>Every Monday from 6-7pm, my friend Jacob and I have fun playing music and chatting
+                <p>Every Sunday from 10-11AM, my friend Jacob and I have fun playing music and chatting
                 on our radio show called "Over Easy". Check us out at <a href="http://tunein.com/radio/WMFO-915-s30984/"
-                >91.5 WMFO</a> in Medford, MA.
+                >91.5 WMFO</a> or like us on <a href="https://www.facebook.com/OverEasyWMFO/">Facebook<a/>.
 
                 <hr><h2>Some favorites!</h2>
 
@@ -84,3 +349,5 @@
 
         </body>
 </html>
+
+
