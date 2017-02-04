@@ -27,3 +27,9 @@ body {
         float: right;
         margin-top: 17px;
 }
+
+.home {
+        background-image: url(images/sunset.jpg);
+        width: 25%;
+        height: 25%;
+}
