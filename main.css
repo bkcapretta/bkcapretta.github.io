@@ -29,5 +29,7 @@ body {
 }
 
 .home {
-        background-image: "images/sunset.jpg";
+        background-image: url("images/sunset.jpg");
+        height: 25%;
+        width: 25%;
 }
