@@ -19,10 +19,16 @@ body {
 
 .home-title {
         font-size: 30pt;
+        font-color="#AB8463";
 }
 
 .home-sub {
         font-size: 17pt;
         float: right;
         margin-top: 17px;
+}
+
+.home {
+        background="images/sunset.jpg";
+        style="height=25% width=25%";
 }
