@@ -1,6 +1,6 @@
 nav {
         font-size: 17px;
-        font-family: Lucida Grande;
+        font: Lucida Grande;
         display: inline;
 }
 
@@ -11,21 +11,21 @@ body {
         margin-right: 30px;
         margin-top: 20px;
         margin-bottom: 20px;
-        max-width: 1.2;
+        max-width: 1.2px;
         font-size: 16px;
-        font-family: Lucida Grande;
+        font: Lucida Grande;
         display: block;
 }
 
 .home-title {
         font-size: 30pt;
-        color: "#AB8463";
+        font-color: #AB8463;
 }
 
 .home-sub {
         font-size: 17pt;
         margin-top: 17px;
-        text-align: right;
+        float: right;
 }
 
 .home {
