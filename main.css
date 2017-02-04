@@ -33,3 +33,9 @@ body {
         width: 25%;
         height: 25%;
 }
+
+#photo {
+        float: right;
+        width: 18%;
+        height: 18%;
+}
