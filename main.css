@@ -19,7 +19,7 @@ body {
 
 .home-title {
         font-size: 30pt;
-        font-color="#AB8463";
+        color: "#AB8463";
 }
 
 .home-sub {
@@ -29,6 +29,7 @@ body {
 }
 
 .home {
-        background="images/sunset.jpg";
-        style="height=25% width=25%";
+        background: images/sunset.jpg;
+        height: 25%;
+        width: 25%;
 }
