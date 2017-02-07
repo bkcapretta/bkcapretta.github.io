@@ -1,15 +1,12 @@
-<<<<<<< HEAD
 HTML README
 
 I am learning HTML and remote Github commands as I make my website, so this README is a place to make note of anything new. 
-=======
 # bkcapretta.github.io
 
 HTML README
 
 I am learning HTML and remote Github commands as I make my website, so this README 
 is a place to make note of anything and everything new.
->>>>>>> ed6f75a8984681d6951c4d1c59dee8a602d5135a
 
 Github
 Helping information on how to push and commit
@@ -18,14 +15,13 @@ http://stackoverflow.com/questions/17291995/push-existing-project-into-github
 Link from Max:
 http://rogerdudler.github.io/git-guide/
 
-<<<<<<< HEAD
 HTML
 To embed images:
 <img src=”website”/>
 
 To embed links:
 <a href=”website”>Whatever I wanna say about it!</a>
-=======
+
 --------------------------------------------------------------------------------
 
 Intro to HTML: Hypertext Markup Language
@@ -128,4 +124,3 @@ colors
 
 If you want to have two different fonts on the same line (helpful link):
 http://www.dynamicdrive.com/forums/showthread.php?47401-2-different-fonts-on-same-line
->>>>>>> ed6f75a8984681d6951c4d1c59dee8a602d5135a
