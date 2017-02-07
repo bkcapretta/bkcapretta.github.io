@@ -1,0 +1,301 @@
+/*   CSS style create by Mark A. Sheldon for Spring 2008
+ *   for Wellesley's CS111.
+ *   Modified for Olin's FOCS course, Spring 2009
+ *   Used for Olin courses through Spring 2011
+ *   Adopted for UMass/Lowell courses Fall 2011
+ *
+ *   Each page has a header with the course logo on the left
+ *   and a title on the right.  The main text comes below.
+ *   
+ *   +--------+---------------------------------+
+ *   |        |                                 |
+ *   | logo   |   topcontent (title)            |
+ *   |        |                                 |
+ *   +--------+---------------------------------+
+ *   |                                          |
+ *   |                                          |
+ *   |                                          |
+ *   |                                          |
+ *   |            maincontent                   |
+ *   |                                          |
+ *   |                                          |
+ *   |                                          |
+ *   |                                          |
+ *   |                                          |
+ *   +------------------------------------------+
+ *   |                                          |
+ *   | dogtag                                   |
+ *   |                                          |
+ *   +------------------------------------------+
+ *
+ *
+ *   The logo and topcontent divs are wrapped in a div called
+ *   "topmatter".
+ *
+ *   For some reason, things don't work well at all in IE on the 
+ *   Mac.  I haven't tested it on PCs.
+ *
+ *   The FOCS logo (a wimpy one) is 85px wide and 58px tall.
+ */
+
+body
+{
+     /* Try a new color */
+     background-color: #FFFFFF;
+          /* lightblue; #CCCCA0; #FFFFFF; #E5E5FF; #E9EFF4; #F0F0F0; #CCCCE5; */
+     font-family: helvetica, georgia, verdana, sans-serif;
+     /* color:  brown; */
+     color: #400A0A; /*  #900A0A  /* A more brown brown */
+}
+
+
+#topmatter
+{
+     width: 56em;
+     //min-height: 140px;  /* height of logo */
+     min-height: 200px;  /* height of logo */
+     padding: 0px 0px 15px 0px;
+}
+
+#logo
+{
+     /* background:        url("logo.gif"); */
+     background:        url("TuftsBallroomCanon1.jpg");
+     background-repeat: no-repeat;
+     background-size:   contain;
+     /*
+     height:            140px;
+     width:             200px;
+     */
+     height:            200px;
+     width:             250px;
+     /*  Natural width of Canon thumbnail
+     width:             180px;
+     height:            320px;
+     */
+     float:             left;
+     margin:      0px 2em 0.5em 0px; 
+}
+
+#logo:hover
+{
+       cursor:   pointer;
+       opacity:  0.5;
+       /* Not changing background color with the canon picture
+        * because the picture doesn't fill the area.
+       background-color: #E0E0FF; */ /* E0E0E0; */
+
+}
+
+/* From https://css-tricks.com/replace-the-image-in-an-img-with-css/
+ * which linked to
+ * http://jsfiddle.net/4LjeL/2/
+ */
+#logo:hover::before
+{
+       content:  "Photo by Aden Brown";
+       color:       black;
+       /* opacity:     1.0;  */ /* doesn't seem to do anything */
+       text-align:  left;
+       position:    relative;
+       top:         200px;
+       left:        100px;
+       display:     inline-block;
+}
+
+#topcontent
+{
+     vertical-align: middle;
+     margin-left: 30px;
+     min-height: 140px;  /* match height of logo */
+}
+
+#menubar
+{
+/*     position: fixed; */
+     max-width:         56em;
+     border-top:    thin solid #000000;
+     border-bottom: thin solid #000000;
+     /* background-color: #E0E0E0; */
+     padding-left:   230px;
+     font-size: x-large;
+     /* set min-width to right thing */
+}
+
+#menubar a.menu_item
+{
+     color: #909090;
+     margin-right: 20px;
+     padding-left: 5px;
+     padding-right: 5px;
+     text-decoration: none;
+     border: none;
+}
+
+#menubar a.menu_item:visited
+{
+     color: #909090;
+     border: none;
+}
+
+#menubar a.menu_item:hover
+{
+/*     background-color: #E0E0E0; */
+     color: #000000;
+}
+
+#menubar span.here
+{ 
+     color: #000000;
+     margin-right: 20px;
+     padding-left: 5px;
+     padding-right: 5px;
+     border-left: thin solid #404040;
+     border-right: thin solid #404040;
+     background-color: #E0E0E0; 
+}
+
+#maincontent
+{
+     /*font-size: large; */
+/*     border-bottom: thin solid #000000; */
+     padding-top: 5ex; /*1.5ex;*/
+     padding-left: 1.5ex;
+}
+
+.navlist
+{
+     list-style-type: none;
+}
+
+.navlist a
+{
+     color: #808080;  /* Grey */
+     font-weight: bold;
+}
+
+.navlist a:hover
+{
+     color: #0C0C0C;   /*maroon;*/
+}
+
+a
+{
+    color: blue;
+}
+
+a:visited
+{
+     color: #000099;
+}
+
+.code
+{
+     color: #990066;
+     font-family: fixed;
+}
+
+.code:visited
+{
+     color: #550022;
+}
+
+.plain_text
+{
+     max-width:  40em; /*46em;*/ /*650px;*/
+     text-align: left;
+}
+
+#dogtag
+{
+     border-top: thin solid #000000;
+     margin-top: 20px;
+     margin-bottom: 10px;
+     position: relative;
+     right: 0px;
+     font-size: x-small;
+}
+
+#screen
+{
+    position:  fixed;
+    /*bottom:    0%; */
+    top:         50%;
+    height:      50%;
+    background:  #000000; 
+    width:       100%;
+    border:      1px;
+    z-index:     100;
+    visibility:  hidden;
+}
+
+#draw_screen
+{
+    position:  fixed;
+    top:       2%;
+    right:     2%;
+    float:     right;
+}
+
+table
+{
+     border-collapse: collapse;
+}
+
+table th
+{
+     padding: 0.5em;
+}
+
+table td
+{
+     padding: 0.5em;
+}
+
+.due
+{
+     color: red;
+}
+
+a.due:visited
+{
+     color: maroon;
+}
+
+a.code
+{
+     font-family: courier, fixed;
+}
+
+iframe
+{
+     background-color:  #BBBBA0;/* #FFFFFF; */ /* #E0E0F0; */
+}
+
+.notabene
+{
+     clear: left;
+     border: thin solid #000000;
+     margin-left: 5em;
+     margin-right: 5em;
+     padding-left: 5px;
+     padding-right: 5px;
+     padding-top: 1ex;
+}
+
+.church
+{
+     border-top:  thin solid #000000;
+}
+
+.quote_sig
+{
+     margin-top: 0.5ex;
+     margin-left: 24em;
+     /*text-align: right;*/
+}
+
+.answer
+{
+     color: purple;
+}
