@@ -1,5 +1,5 @@
 .nav {
-	font-size: 17px;
+	font-size: 20px;
 	font: Lucida Grande;
 	display: inline;
 }
@@ -18,25 +18,23 @@ body {
 
 .home-page {
 	background: url(images/sunset.jpg);
-	width: 25%;
-	height: 25%;
 }
 
 .home-title {
 	font-size: 30pt;
 	color: #DEB887;
+	float: left;
 }
 
 .home-sub {
-	float: right; /* not currently doing anything*/
 	font-size: 17pt;
-	margin-top: 17px;
+	margin-top: 20px;
+	margin-left: 50%;
 }
 
 .photo_bianca {
-    width: 18%;  /*ill not shrink image.... */
-    height: 18%;
-	margin-left: 60%;
+	margin-left: 80%;
+	position: absolute;
 }
 
 .photo_shir_appeal {
@@ -45,7 +43,6 @@ body {
 	width: 50%;  /* how to make photo reactive to page*/
 }
 
-.photo_film {
-	margin-right: 20%;
-	margin-left: 20%;
+.project_photo {
+	margin-left: 50%;
 }

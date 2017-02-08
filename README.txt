@@ -1,6 +1,42 @@
 HTML README
+By: Bianca Capretta
+Date: 2/7/17
+Assignment 1: Your Portfolio
 
-I am learning HTML and remote Github commands as I make my website, so this README is a place to make note of anything new. 
+1. Identify what aspects of the work have been correctly implemeneted and what 
+have not
+
+- index.html has been implemented the way I want as my home page.
+- bio.html has been implemented with a description of myself in separate sections.
+However, the picture of me isn't being implemented exactly as I'd like right
+now. I want it to be smaller and on the right.
+- resume.html includes information about myself, my education, job experience,
+skills, and activities.
+
+- I have also implemented a few other pages:
+	- projects.html: describes my projects in more detail
+	- music.html: elaborates on my experience and love for music
+	- other.html: includes other things I've spent my time doing 
+		(film and non-profit work)
+
+- I am currently having trouble making http://www.cs.tufts.edu/~bcapre01/
+direct to my github page
+
+2. Identify anyone with whom you have collaborated or discussed the assignment.
+- Max Bernstein helped me test my website locally. By typing
+	python -m SimpleHTTPServer I was able to start a small little server and
+	test my changes immediately.
+
+3. Say approximately how many hours you have spent completing the assignment.
+- Since I created some extra pages, I've probably spent ~30 hours on this
+project.
+
+--------------------------------------------------------------------------------
+
+The rest of the README includes helpful links and HTML bits for myself:
+
+I am learning HTML and remote Github commands as I make my website, so this README
+is a place to make note of anything new. 
 # bkcapretta.github.io
 
 HTML README
