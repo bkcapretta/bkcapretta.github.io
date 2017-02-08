@@ -40,9 +40,9 @@ body {
 .photo_shir_appeal {
 	float: right; 
 	height: 50%;
-	width: 50%;  /* how to make photo reactive to page*/
+	width: 50%;  
 }
 
 .project_photo {
-	margin-left: 50%;
+	float: center;
 }

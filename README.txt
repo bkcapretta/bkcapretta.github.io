@@ -7,11 +7,10 @@ Assignment 1: Your Portfolio
 have not
 
 - index.html has been implemented the way I want as my home page.
-- bio.html has been implemented with a description of myself in separate sections.
-However, the picture of me isn't being implemented exactly as I'd like right
-now. I want it to be smaller and on the right.
+- bio.html is my "About Me" page which has been implemented with a description 
+of myself in sub-header separate sections
 - resume.html includes information about myself, my education, job experience,
-skills, and activities.
+skills, and activities
 
 - I have also implemented a few other pages:
 	- projects.html: describes my projects in more detail
@@ -19,8 +18,9 @@ skills, and activities.
 	- other.html: includes other things I've spent my time doing 
 		(film and non-profit work)
 
-- I am currently having trouble making http://www.cs.tufts.edu/~bcapre01/
-direct to my github page
+- For implementing the redirection of http://www.cs.tufts.edu/~bcapre01/
+I made it redirect to my domain name: biancacapretta.com which is connected
+to my github account (bkcapretta@github.io)
 
 2. Identify anyone with whom you have collaborated or discussed the assignment.
 - Max Bernstein helped me test my website locally. By typing
@@ -33,7 +33,7 @@ project.
 
 --------------------------------------------------------------------------------
 
-The rest of the README includes helpful links and HTML bits for myself:
+The rest of the README includes helpful links and HTML tid-bits for myself:
 
 I am learning HTML and remote Github commands as I make my website, so this README
 is a place to make note of anything new. 
