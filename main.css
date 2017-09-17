@@ -46,3 +46,7 @@ body {
 .project_photo {
 	margin-left: 5%;
 }
+
+.photo_ms {
+	float: relative;
+}
