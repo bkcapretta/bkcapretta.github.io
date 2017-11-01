@@ -4,7 +4,6 @@ html {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	background-repeat: no-repeat;
 }
 
 .nav {
@@ -18,11 +17,9 @@ body {
 	margin-left: 30px;
 	margin-right: 30px;
 	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 20px; 
 	font-size: 16px;
 	font: Lucida Grande;
-	display: block;
-	background-size: contain;
 }
 
 .home-title {
