@@ -1,4 +1,12 @@
-html {
+/*html {
+	background: url(images/sunset.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+} */
+
+.home-body {
 	background: url(images/sunset.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -20,6 +28,7 @@ body {
 	margin-bottom: 20px; 
 	font-size: 16px;
 	font: Lucida Grande;
+	background-color: #F5F5DC;
 }
 
 .home-title {
