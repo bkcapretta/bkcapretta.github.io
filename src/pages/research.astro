@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navigation from '../components/Navigation.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Bianca Capretta - Research">
+  <Navigation />
+  <PageHeader title="Research" backgroundImage="/img/intern.jpg" />
+
+  <main class="max-w-4xl mx-auto px-4 py-12">
+    <section>
+      <h2 class="text-3xl font-bold text-gray-900 mb-2">Music Cognition Research</h2>
+      <h3 class="text-xl text-gray-600 mb-6">Fall 2017</h3>
+
+      <p class="text-gray-700 leading-relaxed mb-4">
+        While studying Cognitive and Brain Sciences, I collaborated with Music Psychologist <strong><a href="https://as.tufts.edu/psychology/people/faculty/aniruddh-patel" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline">Dr. Aniruddh Patel</a></strong> to investigate the cognitive effects of interpersonal synchrony of self-other integration (the "blurring" of self-perception). We wanted to learn if a musical synchronous activity between two people leads to an increase in intentional binding.
+      </p>
+
+      <div class="space-y-4 mb-6">
+        <p class="text-gray-700 leading-relaxed">
+          <strong>1.</strong> We read several research papers on joint music making, group cohesion, sense of agency, and self-other blurring to align on our experiment and hypothesis.
+        </p>
+        <p class="text-gray-700 leading-relaxed">
+          <strong>2.</strong> We designed a controlled, multi-stage experiment, including a synchronized tapping module and a perception-testing activity to measure "self-other blurring".
+        </p>
+        <p class="text-gray-700 leading-relaxed">
+          <strong>3.</strong> I coded the full-stack experimental apparatus (in Javascript/React) using development tool Evothings Studio to track and record millisecond-level reaction times and anticipatory beeps in order to quantify behavioral changes in social perception.
+        </p>
+      </div>
+
+      <p class="text-gray-700 leading-relaxed italic mb-6">
+        <strong>Note:</strong> While the semester concluded before the data collection phase, I successfully performed pilot testing on the software to ensure the timing of the tapping was recorded precisely and that the accuracy of the reaction-time logging was correct, ensuring the system was deployment-ready for future progress.
+      </p>
+
+      <p class="text-gray-700 leading-relaxed">
+        Work for this research can be found <strong><a href="https://github.com/bkcapretta/Music-Cognition-Research" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline">here</a></strong>.
+      </p>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>

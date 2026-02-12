@@ -1,0 +1,32 @@
+---
+const navItems = [
+  { name: 'Home', path: '/' },
+  { name: 'Experience', path: '/experience' },
+  { name: 'Research', path: '/research' },
+  { name: 'Projects', path: '/projects' },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<nav class="absolute top-0 left-0 right-0 z-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-center h-16">
+      <ul class="flex space-x-8">
+        {navItems.map((item) => (
+          <li class="flex items-center">
+            <a
+              href={item.path}
+              class:list={[
+                "text-white hover:text-gray-200 font-medium transition-colors drop-shadow-md",
+                currentPath === item.path && "font-bold"
+              ]}
+            >
+              {item.name}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</nav>

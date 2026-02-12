@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navigation from '../components/Navigation.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Bianca Capretta - Projects">
+  <Navigation />
+  <PageHeader title="Projects" backgroundImage="/img/code.jpg" />
+
+  <main class="max-w-4xl mx-auto px-4 py-12">
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold text-gray-900 mb-2">Ballot Check - Wisconsin</h2>
+      <h3 class="text-xl text-gray-600 mb-4">Fall 2020</h3>
+      <p class="text-gray-700 leading-relaxed">
+        I designed and developed the first iteration of the website <strong>Ballot Check</strong> to educate Wisconsin voters about the representatives they're voting for in their district's ballot. This website provides the steps necessary to vote and educates voters on the election's key issues, like COVID-19, the economy, healthcare, criminal justice, and reproductive rights. In just a team of two engineers, we used the Cicero API within WIX to pull the correct polling and district information and display to users. Check it out <a href="https://www.thedownballot.org/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline">here</a>!
+      </p>
+    </section>
+
+    <hr class="my-12 border-gray-200" />
+
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">
+        <a href="http://www.cs.tufts.edu/comp/116/archive/spring2018/bcapretta.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline">
+          A New Take on the Cyber War: Squirrels
+        </a>
+      </h2>
+      <h3 class="text-xl text-gray-600 mb-4">Spring 2018</h3>
+      <div class="mb-4">
+        <a href="http://www.cs.tufts.edu/comp/116/archive/spring2018/bcapretta.pdf" target="_blank" rel="noopener noreferrer">
+          <img src="/img/squirrel.jpg" alt="Cyber War Squirrels" class="w-full max-w-md rounded-lg shadow-md" />
+        </a>
+      </div>
+      <p class="text-gray-700 leading-relaxed">
+        Mentioned by my professor on twitter <a href="https://twitter.com/0xmchow/status/993343557846085632?lang=en" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline">here</a>.
+      </p>
+    </section>
+
+    <hr class="my-12 border-gray-200" />
+
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold text-gray-900 mb-2">Budget Manipulator</h2>
+      <h3 class="text-xl text-gray-600 mb-4">Spring 2018</h3>
+      <p class="text-gray-700 leading-relaxed">
+        Developed a multi-faceted <a href="https://github.com/bkcapretta/budget_manipulator" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline">budget sheet</a> using Google Sheets' API which allows one to flex and manage salaries. The sheet triggers upon edit to adjust the percent allocated per salary or yearly rate while maintaining an overall budget.
+      </p>
+    </section>
+
+    <hr class="my-12 border-gray-200" />
+
+    <section>
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">
+        <a href="https://electchen.wixsite.com/home" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline">
+          Tufts Presidential Election Campaign Website
+        </a>
+      </h2>
+      <h3 class="text-xl text-gray-600 mb-4">Spring 2018</h3>
+      <p class="text-gray-700 leading-relaxed">
+        I designed a website to showcase my friend's platform for Tufts undergraduate President. Click on the title to see!
+      </p>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>

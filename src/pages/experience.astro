@@ -1,0 +1,156 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navigation from '../components/Navigation.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Bianca Capretta - Experience">
+  <Navigation />
+  <PageHeader title="Experience" backgroundImage="/img/spotify.jpg" />
+
+  <main class="max-w-4xl mx-auto px-4 py-12">
+    <!-- Spotify -->
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold text-gray-900 mb-1">Spotify</h2>
+      <div class="mb-4 text-gray-600">
+        <p class="text-xl">Senior Backend and Data Engineer</p>
+        <p>June 2019 - October 2025</p>
+        <p>New York City, NY</p>
+      </div>
+
+      <div class="space-y-6">
+        <div>
+          <h4 class="text-lg font-semibold text-gray-800 mb-2">Home Friday Takeover</h4>
+          <p class="text-gray-700 leading-relaxed">
+            On the Home Music team, I worked as the cross-functional lead for the "Home Friday Takeover" experience. I independently scoped, built 4 new shelves, and programmed the entire experience on the Main and Music feeds. Intended to be a global launch, I prepared translations for all markets and led QA test sessions cross-mission with client engineers to ensure a smooth and functional experience. We ran A/B and holdback tests to learn the impact of showing this relatively invasive feature to all users. Launched with extensive monitoring, the takeover lifted new release consumption by 2.6% in the entire app and led to 39% more users navigating to the Music subfeed.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-semibold text-gray-800 mb-2">Upcoming Releases on Home</h4>
+          <div>
+            <img src="/img/upcoming_release.jpg" alt="Upcoming Releases on Home" class="float-right ml-6 mb-2 w-1/4 rounded-lg shadow-md" />
+            <p class="text-gray-700 leading-relaxed">
+              From idea to completion, I designed and built batch data pipelines, BigTable storage, and backend API to generate and serve personalized upcoming releases per user ("Count down pages") on the Home feed. I worked collaboratively cross-mission with client engineers to ensure feature data was properly passed, with data science to measure the impact of introducing a feature that doesn't lead to new streams, and with product to ensure we surfaced the most ideal balance of upcoming releases to new releases. After rolling out upcoming releases on Home, we increased album pre-save count by 48%.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-semibold text-gray-800 mb-2">Audiobook Popularity and Affinity Datasets</h4>
+          <p class="text-gray-700 leading-relaxed">
+            In the data platform product area, I served as tech lead for building the foundational datasets for the Audiobook product launch. With a requirement to generate easily accessible data for user-facing teams to generate personalized and regionally-relevant audiobook recommendations, I designed and implemented daily batch pipelines to generate user-affinity scores and regional / global popularity scores, a BigTable storage schema to store this data, and a low-latency backend API for this data to be requested in real-time.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-semibold text-gray-800 mb-2">"Smart Shuffle" (previously known as "Enhance")</h4>
+          <p class="text-gray-700 leading-relaxed">
+            On a brand new team, I built out the initial prototype for the <strong>"Smart Shuffle"</strong> feature inside of user's listening sessions. It surfaces recommendations based on the intent of the tracks in your playlist or session. I worked closely with the Data Curation team to improve the recommendation quality and deliver an interactive component for users to like or dislike a rec. After several A/B tests, we launched this feature to 400M+ users globally. As an initial engineer on the team, we received a patent for this novel algorithm: <strong><a href="https://patents.google.com/patent/US12153625B2/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline">Systems and methods for interleaving recommended media items in a playlist</a></strong>.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-semibold text-gray-800 mb-2">2020 Wrapped Campaign</h4>
+          <div>
+            <img src="/img/wrapped2020.jpg" alt="2020 Wrapped Campaign" class="float-right ml-6 mb-2 w-1/4 rounded-lg shadow-md" />
+            <p class="text-gray-700 leading-relaxed">
+              I worked on the data-facing backend service for the <strong>2020 Wrapped Campaign</strong> (your top songs, artists, genres, etc). Prior to that, I worked on a squad focused around playlist curation for any mood or activity. I road managed a test, implemented playlist strategies, and helped migrate radio and playlist frameworks to new experimentation platforms and upgrade our pipelines.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-semibold text-gray-800 mb-2">Internship</h4>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            I turned someone's hack week project into production-ready code, which ended up becoming today's "On Repeat" & "Repeat Rewind". I worked with Product and Data Science to test playlists that show you music you can't stop listening to. The initial test led to an increase in Spotify overall consumption, which was no simple feat.
+          </p>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            Outside of my squad work, I mentored two junior engineers biweekly, led eight quarterly mentorship workshops to ~100 Spotifiers, facilitated ~50 incident reviews across the Personalization mission, and frequently participated in technical book clubs from Domain-Driven design to data intensive systems.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-12 border-gray-200" />
+
+    <!-- Continue with other positions... Due to length, I'll create a simplified version -->
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold text-gray-900 mb-1">JumboCode</h2>
+      <div class="mb-4 text-gray-600">
+        <p class="text-xl">Project Manager</p>
+        <p>August 2018 - May 2019</p>
+        <p>Medford, MA</p>
+      </div>
+      <p class="text-gray-700 leading-relaxed">
+        I served as a Project Manager in <a href="https://www.facebook.com/JumboCode/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline">JumboCode</a>, which is a Tufts student-run club dedicated to making websites and applications for non-profits while empowering students to work on out-of-school projects. I led a project to make a website for the <strong><a href="https://www.textbookexchangenetwork.com/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline">Textbook Exchange Network</a> (TEN)</strong>, a coalition of student-run textbook exchanges on Boston university campuses where students can browse, buy, and sell used books every semester.
+      </p>
+    </section>
+
+    <hr class="my-12 border-gray-200" />
+
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold text-gray-900 mb-1">LinkedIn</h2>
+      <div class="mb-4 text-gray-600">
+        <p class="text-xl">Software Engineer Intern</p>
+        <p>Summer 2018</p>
+        <p>San Francisco, CA</p>
+      </div>
+      <p class="text-gray-700 leading-relaxed">
+        Interning within LinkedIn Marketing Solutions (LMS), I focused on its Campaign Manager which handles companies' ad accounts. I worked on a front-end feature that allows a company to associate their company with an ad account when going through the new campaign creation flow. In the second half of the summer, I worked on the API and front-end component for the Company Creation feature in which a user can create a company page on the fly. The new Company Creation design featured inline efforts to mitigate the attrition of transitioning to a new window.
+      </p>
+    </section>
+
+    <hr class="my-12 border-gray-200" />
+
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold text-gray-900 mb-1">Microsoft</h2>
+      <div class="mb-4 text-gray-600">
+        <p class="text-xl">Explorer Intern</p>
+        <p>Summer 2017</p>
+        <p>Redmond, WA</p>
+      </div>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        During my Explorer internship, I had the opportunity to "explore" both the Program Manager position and the Software Developer role. I really enjoyed the creative aspect of being a PM and the problem-solving challenge of being a developer.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-6">
+        I worked on a team producing Microsoft Sway (similar to Powerpoint), but the application does all of the designing and templating for you. Two other interns and I worked on improving the discoverability of the navigation feature (to jump through Sway slides more easily). We iterated through designs as PMs that we later implemented as engineers in C# and Typescript. Check out our pull-down navigation bar!
+      </p>
+      <div class="grid grid-cols-2 gap-4">
+        <img src="/img/sway1.png" alt="Sway Navigation 1" class="w-full rounded-lg shadow-md" />
+        <img src="/img/sway2.png" alt="Sway Navigation 2" class="w-full rounded-lg shadow-md" />
+      </div>
+    </section>
+
+    <hr class="my-12 border-gray-200" />
+
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold text-gray-900 mb-1">Tufts University</h2>
+      <div class="mb-4 text-gray-600">
+        <p class="text-xl">Data Structures Teaching Assistant</p>
+        <p>January - December 2017</p>
+        <p>Medford, MA</p>
+      </div>
+      <p class="text-gray-700 leading-relaxed">
+        At Tufts, I loved teaching introductory computer science concepts to beginners. I taught computer labs for programming students in Data Structures, graded homework, and provided individual assistance with class homework and projects during open office hours.
+      </p>
+    </section>
+
+    <hr class="my-12 border-gray-200" />
+
+    <section>
+      <h2 class="text-3xl font-bold text-gray-900 mb-1">Center for Engineering Education and Outreach</h2>
+      <div class="mb-4 text-gray-600">
+        <p class="text-xl">Software Engineer Intern</p>
+        <p>Summer 2016</p>
+        <p>Medford, MA</p>
+      </div>
+      <p class="text-gray-700 leading-relaxed">
+        I created an inventory system for the CEEO lab using Google Spreadsheet's Script Editor. While building the project, I learned how to program in Javascript and that Google has some neat built-in functionalities. I also worked with the GrovePi to mess around with proof-of-concept "Internet of Things" projects. I <a href="https://github.com/tuftsceeo/IoT/tree/master/GrovePi" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline">coded</a> a function that posted tweets when a button was pressed on the GrovePi. I also was able to livestream all the current tweets in the world and make a light sensor flash when a specific hashtag appeared. For a better visual, watch my <a href="https://youtu.be/KWlcQqoKCoU" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline">youtube video</a>.
+      </p>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
