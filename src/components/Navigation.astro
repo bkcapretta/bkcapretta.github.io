@@ -11,8 +11,10 @@ const currentPath = Astro.url.pathname;
 
 <nav class="absolute top-0 left-0 right-0 z-10">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-center h-16">
-      <ul class="flex space-x-8">
+    <div class="flex justify-end md:justify-center items-center h-16">
+
+      <!-- Desktop menu -->
+      <ul class="hidden md:flex space-x-8">
         {navItems.map((item) => (
           <li class="flex items-center">
             <a
@@ -27,6 +29,45 @@ const currentPath = Astro.url.pathname;
           </li>
         ))}
       </ul>
+
+      <!-- Mobile hamburger button -->
+      <button
+        id="mobile-menu-button"
+        class="md:hidden text-white drop-shadow-md p-2"
+        aria-label="Toggle menu"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
     </div>
   </div>
+
+  <!-- Mobile dropdown menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-black bg-opacity-70 px-6 pb-4">
+    <ul class="flex flex-col space-y-3">
+      {navItems.map((item) => (
+        <li>
+          <a
+            href={item.path}
+            class:list={[
+              "block py-1 text-white hover:text-gray-200 font-medium transition-colors drop-shadow-md",
+              currentPath === item.path && "font-bold"
+            ]}
+          >
+            {item.name}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
 </nav>
+
+<script>
+  const button = document.getElementById('mobile-menu-button');
+  const menu = document.getElementById('mobile-menu');
+  button?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+  });
+</script>
